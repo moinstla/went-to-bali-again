@@ -38,6 +38,11 @@ group :development, :test do
   gem 'byebug', platform: :mri
   gem 'pry'
   gem 'faker'
+  gem 'rspec-rails'
+  gem 'shoulda-matchers'
+  gem 'launchy'
+  gem 'capybara'
+  gem 'factory_girl_rails'
 end
 
 group :development do
