@@ -1,1 +1,1 @@
-$('#total_items').html("Cart | Total items: #{ cart_items }");
+$('#total_items').html('Cart | Total items: <%= @order.order_items.count %>' );
