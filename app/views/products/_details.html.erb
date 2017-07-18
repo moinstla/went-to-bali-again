@@ -1,2 +1,8 @@
+<h3><%= @product.name %></h3>
 <p><%= @product.description %></p>
 <%= link_to "Hide Details", products_path %>
+<br>
+<% if current_user.try(:admin?) %>
+<p> <%= link_to "Edit Product",  edit_product_path(@product) %></p>
+<%= link_to "Delete Product", product_path(@product), :data => {:confirm => "You sure?", :method => "delete"} %>
+<% end %>
